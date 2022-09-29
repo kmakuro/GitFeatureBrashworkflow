@@ -9,6 +9,9 @@ namespace Assignment_4
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
 
+        Texture2D ballTexture;
+        Texture2D charTexture;
+
         public Game1()
         {
             _graphics = new GraphicsDeviceManager(this);
@@ -26,6 +29,9 @@ namespace Assignment_4
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
+
+            charTexture = Content.Load<Texture2D>("Char01");
+            ballTexture = Content.Load<Texture2D>("ball");
 
             // TODO: use this.Content to load your game content here
         }
