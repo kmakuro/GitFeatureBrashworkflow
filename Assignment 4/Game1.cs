@@ -11,6 +11,9 @@ namespace Assignment_4
 
         Texture2D ballTexture;
         Texture2D charTexture;
+
+        Texture2D ballTexture;
+        Texture2D charTexture;
         Vector2 charPosition = new Vector2(0, 250);
         Vector2[] ballPosition = new Vector2[4];
         bool personHit;
@@ -48,6 +51,9 @@ namespace Assignment_4
             framePerSec = 8;
             timePerFrame = (float)1 / framePerSec;
             totalElapsed = 0;
+
+            charTexture = Content.Load<Texture2D>("Char01");
+            ballTexture = Content.Load<Texture2D>("ball");
 
             for (int i = 0; i < 4; i++)
             {
